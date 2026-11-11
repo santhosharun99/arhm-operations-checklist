@@ -4,7 +4,7 @@ A responsive checklist for the Assam Rifles Half Marathon, with separate Race Da
 
 ## Shared use
 
-The site is hosted on GitHub Pages. Checklist records are stored in Supabase and sync between signed-in devices through Supabase Realtime. Sign in with the same email and password on your phone and laptop.
+The site is hosted on GitHub Pages. Checklist records are cached on the device and stored in Supabase. Pending edits retry when the connection returns, and signed-in devices sync through Supabase Realtime. Sign in with the same email and password on your phone and laptop.
 
 The site is sign-in only; public sign-ups are disabled. An administrator provisions the account in Supabase under **Authentication → Users → Add user**. Manage the password through Supabase Auth; do not create a table containing plain-text passwords. Sign in with that account on every device.
 

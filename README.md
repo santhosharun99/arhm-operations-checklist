@@ -6,12 +6,7 @@ A responsive checklist for the Assam Rifles Half Marathon, with separate Race Da
 
 The site is hosted on GitHub Pages. Checklist records are stored in Supabase and sync between signed-in devices through Supabase Realtime. Sign in with the same email and password on your phone and laptop.
 
-Before the first account sign-up, set the Supabase project's **Authentication → URL Configuration**:
-
-- **Site URL:** `https://santhosharun99.github.io/arhm-operations-checklist/`
-- **Redirect URL:** `https://santhosharun99.github.io/arhm-operations-checklist/**`
-
-Then open the site, choose **Create account**, and confirm the email. Sign in with that account on every device.
+The site is sign-in only; public sign-ups are disabled. An administrator provisions the account in Supabase under **Authentication → Users → Add user**. Manage the password through Supabase Auth; do not create a table containing plain-text passwords. Sign in with that account on every device.
 
 ## Data protection
 

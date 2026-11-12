@@ -1,6 +1,6 @@
 create table public.arhm_sync_records (
   user_id uuid not null references auth.users (id) on delete cascade,
-  bucket text not null check (bucket in ('race', 'expo', 'contacts', 'bikers', 'places', 'custom_tasks')),
+  bucket text not null check (bucket in ('race', 'expo', 'contacts', 'bikers', 'places', 'custom_tasks', 'deleted_tasks')),
   record_id text not null,
   payload jsonb not null check (jsonb_typeof(payload) = 'object'),
   updated_at timestamptz not null default now(),

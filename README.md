@@ -1,6 +1,8 @@
 # ARHM Operations Checklist
 
-A responsive checklist for the Assam Rifles Half Marathon, with separate Race Day and Bib Expo modes, route references, biker assignments, and the team contact directory.
+A responsive checklist for the Assam Rifles Half Marathon, built from the detailed master checklist workbook: 11 department pages (438 points) filterable by phase (pre-event, event execution, post-event) and timeline, plus route references, biker assignments, the team contact directory, department heads and the prize-money reference.
+
+Checklist states are stored in the `race` bucket with record IDs `v2:<point id>` (for example `v2:d03-001`); added and removed points use the `master_v2` record in `custom_tasks` and `deleted_tasks`. Records from the earlier Race Day / Bib Expo checklist are left in the database but no longer shown.
 
 ## Shared use
 
